@@ -11,9 +11,27 @@
     
     If the value is not between 0 and 100, return null.
 */
-
 function letterGrade(numberGrade) {
-    return null;
+    if (numberGrade < 0) {
+        return null;
+    }
+    if (numberGrade <= 59) {
+        return "F";
+    } else if (numberGrade <= 69) {
+        return "D";
+    } else if (numberGrade <= 79) {
+        return "C";
+    } else if (numberGrade <= 89) {
+        return "B";
+    } else if (numberGrade <= 100) {
+        return "A";
+    } else {
+        return null;
+    }
 }
+
+/* function letterGrade(numberGrade) {
+    return null;
+} */
 
 export default letterGrade;
