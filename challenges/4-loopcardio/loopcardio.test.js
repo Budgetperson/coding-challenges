@@ -1,9 +1,9 @@
 import {
     printNumbersUntil,
-    printEvenNumbersUntil,
-    printNumbersUntilWithNegative,
-    sumOfNumbersUpto,
-    fizzBuzz,
+    // printEvenNumbersUntil,
+    // printNumbersUntilWithNegative,
+    // sumOfNumbersUpto,
+    // fizzBuzz,
 } from "./loopcardio";
 
 let getAllLogs = (mockFn) => {
