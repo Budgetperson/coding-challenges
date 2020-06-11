@@ -56,4 +56,21 @@ describe("6-objectstringcardio", () => {
             expect(isRelaxedPalindrome(input)).toEqual(output);
         });
     });
+
+    describe("#getPositionsGuessed", () => {
+        it.each([
+            ["fun", "**n", "u", [1]],
+            ["cooee", "c**ee", "o", [1, 2]],
+            ["cooee", "c**ee", "e", []],
+            ["cooee", "c**ee", "z", []],
+            ["f", "*", "f", [0]],
+        ])(
+            "%p with partial %p, guess %p is %p",
+            (solution, partial, guess, result) => {
+                expect(getPositionsGuessed(solution, partial, guess)).toEqual(
+                    result
+                );
+            }
+        );
+    });
 });
